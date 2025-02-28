@@ -29,3 +29,4 @@ SecurityResources
     fix=properties.remediation,
     vulnId=properties.id
 | project id,vulnId,vulnerability,severity,description,threat,impact,fix
+
