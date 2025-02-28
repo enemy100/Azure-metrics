@@ -15,4 +15,3 @@ SecurityResources
     UUID=name,
     VM=split(id,'/')[8]
 | project UUID,VM,Vulnerability,Date,Severity,Description,Threat,Impact,Fix,VulnId
-'''
