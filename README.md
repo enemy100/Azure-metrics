@@ -1,7 +1,7 @@
 # Azure-metrics KQL Queries
 
 Vulnerabilities on Servers
-
+'''
 SecurityResources
 | where type == "microsoft.security/assessments/subassessments" and properties.additionalData.assessedResourceType == "ServerVulnerability" or properties.additionalData.assessedResourceType == "ServerVulnerabilityTvm"  and properties.status.code == "Unhealthy"
 | extend Vulnerability=properties.displayName,
@@ -15,3 +15,4 @@ SecurityResources
     UUID=name,
     VM=split(id,'/')[8]
 | project UUID,VM,Vulnerability,Date,Severity,Description,Threat,Impact,Fix,VulnId
+'''
