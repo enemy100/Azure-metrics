@@ -27,7 +27,7 @@ Simply run the script after installing the required dependencies:
 ```
 pip install requests azure-identity rich
 python azure_metrics_collector.py
-
+```
 *Output*
 The script generates three types of outputs:
 
