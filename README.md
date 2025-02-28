@@ -2,9 +2,9 @@
 
 **The script functions as an Azure resource metrics collector that gathers data from:**
 
-Storage Accounts - collects performance metrics including transactions, bandwidth, latency, and capacity
-Virtual Machines - both native Azure VMs and Arc-connected machines, checking monitoring status
-Network Resources - checks availability and health status of various networking components
+  -  Storage Accounts - collects performance metrics including transactions, bandwidth, latency, and capacity
+  -  Virtual Machines - both native Azure VMs and Arc-connected machines, checking monitoring status
+  -  Network Resources - checks availability and health status of various networking components
 
 *Features*
 
