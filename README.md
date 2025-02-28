@@ -15,3 +15,16 @@ SecurityResources
     UUID=name,
     VM=split(id,'/')[8]
 | project UUID,VM,Vulnerability,Date,Severity,Description,Threat,Impact,Fix,VulnId
+
+**SQL Vulnerabilities**
+```
+SecurityResources
+| where type == "microsoft.security/assessments/subassessments" and properties.additionalData.assessedResourceType=="SqlServerVulnerability" or properties.additionalData.assessedResourceType=="SqlVirtualMachineVulnerability" and properties.status.severity=="High"  and properties.status.code == "Unhealthy"
+| extend vulnerability=properties.displayName,
+    description=properties.description,
+    severity=properties.status.severity,
+    threat=properties.additionalData.threat,
+    impact=properties.impact,
+    fix=properties.remediation,
+    vulnId=properties.id
+| project id,vulnId,vulnerability,severity,description,threat,impact,fix
