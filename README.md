@@ -9,18 +9,18 @@
 *Features*
 
   -  Authentication using Azure DefaultAzureCredential (supports CLI login, managed identities, etc.)
-Collects detailed metrics from Storage Accounts over the last 24 hours
-Monitors VM Insights status across both native VMs and Arc-connected machines
-Evaluates health state of network resources
-Presents results in formatted tables using the Rich library
-Exports all metrics to time-stamped CSV files
+  -  Collects detailed metrics from Storage Accounts over the last 24 hours
+  -  Monitors VM Insights status across both native VMs and Arc-connected machines
+  -  Evaluates health state of network resources
+  -  Presents results in formatted tables using the Rich library
+  -  Exports all metrics to time-stamped CSV files
 
 *Requirements*
 
-Python 3.6+
-Required packages: requests, azure-identity, rich
-Azure subscription with appropriate permissions
-Authenticated Azure CLI session (az login)
+  -  Python 3.6+
+  -  Required packages: requests, azure-identity, rich
+  -  Azure subscription with appropriate permissions
+  -  Authenticated Azure CLI session (az login)
 
 *Usage*
 Simply run the script after installing the required dependencies:
