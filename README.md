@@ -31,6 +31,6 @@ python azure_metrics_collector.py
 *Output*
 The script generates three types of outputs:
 
-Console tables displaying metrics in a readable format
-CSV exports for detailed analysis
-Summary statistics for quick assessment
+Console tables displaying metrics in a readable format.
+CSV exports for detailed analysis.
+Summary statistics for quick assessment.
