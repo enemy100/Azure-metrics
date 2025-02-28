@@ -24,7 +24,8 @@ Authenticated Azure CLI session (az login)
 
 *Usage*
 Simply run the script after installing the required dependencies:
-bashCopypip install requests azure-identity rich
+```
+pip install requests azure-identity rich
 python azure_metrics_collector.py
 
 *Output*
