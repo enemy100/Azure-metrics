@@ -1,4 +1,4 @@
-# Azure Metrics Collector
+# Azure Insights Metrics Collector
 
 **The script functions as an Azure resource metrics collector that gathers data from:**
 
