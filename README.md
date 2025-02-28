@@ -1,6 +1,6 @@
-# Azure-metrics KQL Queries
+# Azure KQL Queries
 
-*Vulnerabilities on Servers*
+**Vulnerabilities on Servers**
 ```
 SecurityResources
 | where type == "microsoft.security/assessments/subassessments" and properties.additionalData.assessedResourceType == "ServerVulnerability" or properties.additionalData.assessedResourceType == "ServerVulnerabilityTvm"  and properties.status.code == "Unhealthy"
