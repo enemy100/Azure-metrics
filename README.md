@@ -8,7 +8,7 @@
 
 *Features*
 
-Authentication using Azure DefaultAzureCredential (supports CLI login, managed identities, etc.)
+  -  Authentication using Azure DefaultAzureCredential (supports CLI login, managed identities, etc.)
 Collects detailed metrics from Storage Accounts over the last 24 hours
 Monitors VM Insights status across both native VMs and Arc-connected machines
 Evaluates health state of network resources
