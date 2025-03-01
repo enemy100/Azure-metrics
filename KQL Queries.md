@@ -28,8 +28,9 @@ SecurityResources
     impact=properties.impact,
     fix=properties.remediation,
     vulnId=properties.id
+```
 
-**Get VM and Arc informations **
+**Get VM and Arc informations**
 ```
 resources
 | where type in~ ("microsoft.compute/virtualmachines", "microsoft.hybridcompute/machines")
